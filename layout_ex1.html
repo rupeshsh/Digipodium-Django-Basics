@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example 1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            list-style: none;
+
+        }
+
+        html{
+            color-scheme: light dark;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.5;
+        }
+
+        header{
+           background-color: brown;
+           padding: .5rem;
+        }
+
+        /* nav{
+            /* background-color: #ffffff83; 
+        }*/
+        .nav-list{
+            display: flex;
+            justify-content: center;
+            gap: 10rem;
+        }
+        ul{
+            display: flex;
+        }
+
+        .nav-list a{
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .nav-list a:hover{
+            color: rgb(224, 224, 203);
+        }
+        .hero{
+            font-size: 6rem;
+            line-height: 1.1;
+            margin-bottom: 5rem;
+            
+            margin-top: 3rem;
+            padding-top: 5rem;
+        }
+        main{
+            width: min(70ch, 90%);
+        
+            margin-inline: auto;
+        }
+        .text{
+            font-size: 1.10rem;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+        .item-list> * {
+            list-style-image: url(arrows.png);
+            margin-left: 1.35rem;
+            padding-top: 1rem 5rem;
+            font-weight: bold;
+        }
+        footer{
+            background-color: beige;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            color: rgb(255, 0, 30);
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Layout 1</a></li>
+                <li><a href="#">Layout 2</a></li>
+                <li><a href="#">Layout 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1 class="hero">Welcome to layout in css</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea unde ipsam in rem quaerat aliquam alias, facilis numquam, commodi eligendi sed fugiat, recusandae ratione nisi. Aperiam numquam minus amet deleniti impedit, id illum nostrum magnam aliquid, animi qui, exercitationem cumque laboriosam necessitatibus enim! Dolor ducimus nostrum nisi minima voluptate vitae qui hic a, exercitationem aut explicabo quas rerum recusandae minus voluptatibus fuga velit, in facere, voluptatum porro? Accusantium adipisci praesentium provident debitis amet consectetur odit quo aliquam repellendus quasi? Vel architecto culpa repellat, necessitatibus repellendus vero totam fugit! Fugit quibusdam sed impedit accusamus. Quos aperiam, porro rem totam hic soluta!</p>
+                <ul class="item-list">
+                    <li>Grids</li>
+                    <li>Flexible</li>
+                    <li>Mixing both together</li>
+                </ul>
+                <p class="text">
+                    This is very useful for creating simple layouts
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui nulla odit quia neque, sed labore, iste ullam, maxime accusamus quae? Earum dolor qui molestias. Sed illum officia sunt enim, distinctio ut rem? Corrupti magnam officia modi quo at exercitationem dignissimos? Magnam neque soluta molestiae consequatur debitis autem minima accusamus.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Digipodium 2023 -  All Rights reserved
+        </p>
+    </footer>
+    
+    
+</body>
+</html>
