@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shree Krishna banner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    * {
+  margin: 0;
+  font-family: 'IBM Plex Sans',Serif;
+  color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url(bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body:before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    background: url(splash.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: screen;
+}
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2 {
+    font-size: 35px;
+}
+h1 > img {
+  width: 100%;
+  max-width: 80px;
+}
+div#text-bg {
+    max-width: 480px;
+}
+.animationTopBottom {
+  animation: animationTopBottom 5s linear forwards;
+}
+@keyframes animationTopBottom {
+  0% {
+    transform: translateY(-600%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+  </style>
+</head>
+<body>
+  <div id="text-bg">
+    <div class="text">
+      <h1>Happy <img class="animationTopBottom" src="krishna.webp" alt="krishna"></h1>
+      
+      <h2>Shree Krishna Janmashtami</h2>
+      <small>माखन चोर नंद किशोर, बांधी जिसने प्रीत की डोर वो जब गुजरे दिल की गलियों से हर कोई बोले वो आया मेरा नंद किशोर। कृष्ण जन्माष्टमी की हार्दिक शुभकामनाएं.</small> 
+    </div>
+    </div>
+  </div>
+</body>
+</html>

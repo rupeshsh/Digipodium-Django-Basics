@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check() {
+        var a = document.getElementById("t1").value;
+        var pattern = /^[a-zA-Z]{5}$/;
+        if (!pattern.test(a)) {
+          document.getElementById("res").innerHTML = "Not Valid";
+          document.getElementById('res').style.color="red";
+        } else {
+          document.getElementById("res").innerHTML = "Valid";
+          document.getElementById('res').style.color="Green";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="t1" />
+    <br />
+    <h1 id="res"></h1>
+    <button onclick="check()">Check</button>
+  </body>
+</html>

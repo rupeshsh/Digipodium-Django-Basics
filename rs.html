@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #img1{
+        width: 1500px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+         filter: grayscale(100%);
+         position: absolute;
+       }
+       #img2{
+        position: absolute;
+        transform: rotate(180deg);
+        height: 100px;
+        margin-top: 180px;
+        margin-left: 693px;
+       }
+        
+    </style>
+    <script>
+        function ON(){
+            document.getElementById("img1").style.filter = "grayscale(0%)";
+            document.getElementById('img2').src="on.png";
+        }
+        function OFF(){
+            document.getElementById("img1").style.filter = "grayscale(100%)";
+            document.getElementById('img2').src="off.png";    
+        }
+    </script>
+    </head>
+    <body>
+
+    <img id="img1"  src="house.jpeg" alt="">
+    <img id="img2"  src="off.png" alt="">
+    <button style="position: absolute; margin-left: 325px; margin-top: 330px;" onclick="ON()">ON</button>
+    <button style="position: absolute; margin-left: 540px; margin-top: 330px;" onclick="OFF()">OFF</button>
+   
+</body>
+</html>

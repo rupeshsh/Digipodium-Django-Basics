@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var a=document.getElementById('t1').value;
+            if(a.lenth=="a"){
+                document.getElementById('res').innerHTML="Weak Password";
+                document.getElementById('t1').style.color="red";
+            }
+            else if(a.lenth>==3){
+                document.getElementById('res').innerHTML="Medium Password";
+                document.getElementById('t1').style.color="orange";
+
+            }
+            else if(a.lenth<==8){
+                document.getElementById('res').innerHTML="Medium Password";
+                document.getElementById('t1').style.color="orange";
+
+            }
+            else{
+                document.getElementById('res').innerHTML="Strong Password";
+                document.getElementById('t1').style.color="green";
+            }
+        }
+    </script>
+</head>
+<body>
+     Enter Password
+    <input type="text" id="t1">
+    <span id="res"></span>
+    <br/>
+    <br/>
+    <button onclick="check()">Check</button> 
+</body>
+</html>

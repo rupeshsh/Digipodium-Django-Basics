@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+    function check(){
+        var a = document.getElementById('p1').value;
+        if(a=="soft"){
+            document.getElementById('res').innerHTML="Softpro india is best company in lucknow";
+        }
+        else if(a=="techpile"){
+            document.getElementById('res').innerHTML="techpile is a software company";
+        }
+        else {
+            document.getElementById('res').innerHTML="This input is not found";
+        }
+    }
+</script>
+</head>
+<body>
+  <input type="text" id="p1">
+  <button onclick="check()"> Genrate</button> 
+  <h1 id="res"></h1>
+  </body>
+</html>

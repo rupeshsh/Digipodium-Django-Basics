@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function check(){
+var a=parseInt(document.getElementById('t1').value);
+var b=parseInt(document.getElementById('t2').value);
+var c=document.getElementById('sym').value;
+if(c=="+"){
+var c=a+b;
+document.getElementById('res').innerHTML=c;
+}
+else if(c=="-"){
+var c=a-b;
+document.getElementById('res').innerHTML=c;
+}
+else if(c=="*"){
+var c=a*b;
+document.getElementById('res').innerHTML=c;
+}
+else if(c=="/"){
+var c=a/b;
+document.getElementById('res').innerHTML=c;
+}
+else{
+document.getElementById('res').innerHTML="Invalid Input";
+ }  
+}
+</script>
+    <style>
+    .outer{
+        width: auto;
+        height: 500px;
+        position: absolute;
+        margin-left: 640px;
+        margin-top: 150px;
+        font-size: 10px;
+    }
+   </style>
+</head>
+<body>
+<div class="outer">
+<h1 style="font-size: 30px;">Calculator</h1>
+<input type="text" id="t1" placeholder="Enter First Number">
+<br>
+<br>
+<input type="text" id="t2" placeholder="Enter Second Number">
+<br>
+<br>
+<input type="text" id="sym" placeholder="Enter Symbols like, +,-,*,/">
+<br>
+<br>
+<button onclick="check()" style="height: 30px; width: 180px">Check</button>
+<h1 id="res"></h1>
+</div> 
+</body>
+</html>
